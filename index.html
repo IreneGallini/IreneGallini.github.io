@@ -483,7 +483,6 @@
   <div class="nav-links">
     <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
-    <a href="#research">Research</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -492,14 +491,14 @@
 <section class="hero" id="top">
   <div class="hero-left">
     <p class="hero-eyebrow">Developer &amp; Researcher</p>
-    <h1>Building across<br><em>web, mobile,</em><br>and quantum.</h1>
+    <h1>Building across<br><em>software, AI,</em><br>and science.</h1>
     <p class="hero-bio">
-      CS student with hands-on experience in full-stack web development, iOS engineering, and quantum computing research — from social platforms to cryptography.
+      Building tools at the intersection of software, AI, and science. CS and chemistry student with experience developing production-oriented software, machine learning workflows, and computational modeling tools for research and industry.
     </p>
     <div class="tag-cloud">
       <span class="tag-pill blue">Web Development</span>
       <span class="tag-pill teal">iOS / Swift</span>
-      <span class="tag-pill purple">Quantum Computing</span>
+      <span class="tag-pill purple">Drug Discovery</span>
       <span class="tag-pill amber">AI &amp; ML Research</span>
     </div>
   </div>
@@ -518,7 +517,7 @@
   <div class="section-inner">
     <div class="section-header">
       <h2>Projects</h2>
-      <span class="count">4 projects — click any card to explore</span>
+      <span class="count">6 projects — click any card to explore</span>
     </div>
     <div class="project-grid">
 
@@ -581,30 +580,57 @@
         </div>
       </div>
 
-      <!-- Quantum Cryptography -->
-      <div class="project-card" onclick="openModal('quantum')">
-        <div class="project-thumb" style="background: var(--purple-light);">
+      <!-- MySQL Layoffs Analysis -->
+      <div class="project-card" onclick="openModal('layoffs')">
+        <div class="project-thumb" style="background: var(--teal-light);">
           <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-            <circle cx="24" cy="24" r="6" stroke="#4a3588" stroke-width="2"/>
-            <ellipse cx="24" cy="24" rx="14" ry="6" stroke="#4a3588" stroke-width="1.5" opacity="0.5"/>
-            <ellipse cx="24" cy="24" rx="14" ry="6" stroke="#4a3588" stroke-width="1.5" transform="rotate(60 24 24)" opacity="0.5"/>
-            <ellipse cx="24" cy="24" rx="14" ry="6" stroke="#4a3588" stroke-width="1.5" transform="rotate(120 24 24)" opacity="0.5"/>
-            <circle cx="24" cy="24" r="2.5" fill="#4a3588"/>
+            <ellipse cx="24" cy="14" rx="14" ry="5" stroke="#1a6b55" stroke-width="1.8"/>
+            <path d="M10 14v8c0 2.76 6.268 5 14 5s14-2.24 14-5v-8" stroke="#1a6b55" stroke-width="1.8"/>
+            <path d="M10 22v8c0 2.76 6.268 5 14 5s14-2.24 14-5v-8" stroke="#1a6b55" stroke-width="1.8"/>
+            <path d="M18 30l3 3 7-7" stroke="#1a6b55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
           </svg>
-          <span class="project-thumb-label">BeyondQuantum 2025</span>
+          <span class="project-thumb-label">MySQL · EDA</span>
         </div>
         <div class="project-body">
-          <div class="project-title">Quantum Cryptography</div>
-          <div class="project-desc">Research on quantum key distribution (QKD) protocols and how quantum mechanics can secure communications against classical and quantum attacks. Presented as a research poster.</div>
+          <div class="project-title">MySQL Layoffs Analysis</div>
+          <div class="project-desc">End-to-end data cleaning and exploratory data analysis pipeline on a real-world layoffs dataset. Removed duplicates, standardized categorical fields, handled missing values, and surfaced trends by industry, company stage, and geography using MySQL.</div>
           <div class="project-tags">
-            <span class="project-tag">Quantum Computing</span>
-            <span class="project-tag">Cryptography</span>
-            <span class="project-tag">QKD</span>
-            <span class="project-tag">Research</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">Data Cleaning</span>
+            <span class="project-tag">EDA</span>
+            <span class="project-tag">SQL</span>
           </div>
         </div>
         <div class="project-footer">
-          <span class="project-footer-text">With Taskia Islam · BeyondQuantum 2025</span>
+          <span class="project-footer-text">Solo · 2024</span>
+          <span class="view-btn">View project →</span>
+        </div>
+      </div>
+
+      <!-- IMDB Database -->
+      <div class="project-card" onclick="openModal('imdb')">
+        <div class="project-thumb" style="background: var(--amber-light);">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <rect x="7" y="12" width="34" height="24" rx="3" stroke="#7a4f15" stroke-width="1.8"/>
+            <path d="M7 20h34" stroke="#7a4f15" stroke-width="1.5" opacity="0.5"/>
+            <path d="M7 28h34" stroke="#7a4f15" stroke-width="1.5" opacity="0.5"/>
+            <path d="M18 12v24" stroke="#7a4f15" stroke-width="1.5" opacity="0.5"/>
+            <path d="M30 12v24" stroke="#7a4f15" stroke-width="1.5" opacity="0.5"/>
+          </svg>
+          <span class="project-thumb-label">DB Design · COMP302</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">IMDB Database Redesign</div>
+          <div class="project-desc">Redesigned and repopulated the IMDB database schema from scratch. Modeled complex relational structures for films, people, roles, and ratings; wrote queries, constraints, and triggers; and populated tables with real data via scripted ingestion.</div>
+          <div class="project-tags">
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Database Design</span>
+            <span class="project-tag">ER Modeling</span>
+            <span class="project-tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <span class="project-footer-text">Team of 3 · COMP302</span>
           <span class="view-btn">View project →</span>
         </div>
       </div>
@@ -638,6 +664,34 @@
         </div>
       </div>
 
+      <!-- Quantum Cryptography -->
+      <div class="project-card" onclick="openModal('quantum')">
+        <div class="project-thumb" style="background: var(--purple-light);">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+            <circle cx="24" cy="24" r="6" stroke="#4a3588" stroke-width="2"/>
+            <ellipse cx="24" cy="24" rx="14" ry="6" stroke="#4a3588" stroke-width="1.5" opacity="0.5"/>
+            <ellipse cx="24" cy="24" rx="14" ry="6" stroke="#4a3588" stroke-width="1.5" transform="rotate(60 24 24)" opacity="0.5"/>
+            <ellipse cx="24" cy="24" rx="14" ry="6" stroke="#4a3588" stroke-width="1.5" transform="rotate(120 24 24)" opacity="0.5"/>
+            <circle cx="24" cy="24" r="2.5" fill="#4a3588"/>
+          </svg>
+          <span class="project-thumb-label">BeyondQuantum 2025</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Quantum Cryptography</div>
+          <div class="project-desc">Research on quantum key distribution (QKD) protocols and how quantum mechanics can secure communications against classical and quantum attacks. Presented as a research poster.</div>
+          <div class="project-tags">
+            <span class="project-tag">Quantum Computing</span>
+            <span class="project-tag">Cryptography</span>
+            <span class="project-tag">QKD</span>
+            <span class="project-tag">Research</span>
+          </div>
+        </div>
+        <div class="project-footer">
+          <span class="project-footer-text">With Taskia Islam · BeyondQuantum 2025</span>
+          <span class="view-btn">View project →</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -655,7 +709,6 @@
           <span class="skill-item">JavaScript</span>
           <span class="skill-item">Swift</span>
           <span class="skill-item">Python</span>
-          <span class="skill-item">SQL</span>
         </div>
       </div>
       <div class="skill-group">
@@ -664,7 +717,6 @@
           <span class="skill-item">React</span>
           <span class="skill-item">Node.js &amp; Express</span>
           <span class="skill-item">TailwindCSS</span>
-          <span class="skill-item">HTML &amp; CSS</span>
         </div>
       </div>
       <div class="skill-group">
@@ -672,17 +724,15 @@
         <div class="skill-list">
           <span class="skill-item">SwiftUI</span>
           <span class="skill-item">Firebase</span>
-          <span class="skill-item">MapKit</span>
-          <span class="skill-item">PostgreSQL / Neon</span>
+          <span class="skill-item">PostgreSQL</span>
         </div>
       </div>
       <div class="skill-group">
         <div class="skill-group-name">Research &amp; AI</div>
         <div class="skill-list">
           <span class="skill-item">PyTorch</span>
-          <span class="skill-item">Qiskit</span>
-          <span class="skill-item">Quantum Information</span>
-          <span class="skill-item">ML / Transformers</span>
+          <span class="skill-item">Drug Discovery</span>
+          <span class="skill-item">Machine Learning</span>
         </div>
       </div>
     </div>
@@ -690,7 +740,7 @@
 </section>
 
 <!-- ══ Certifications ══ -->
-<section class="section alt" id="research">
+<section class="section alt" id="certifications">
   <div class="section-inner">
     <div class="section-header">
       <h2>Certifications</h2>
@@ -794,6 +844,34 @@
       ],
       collab: "Built with Bernarda Perez De Nucci, Silas Revenaugh, and Shahed Zahaykeh."
     },
+    layoffs: {
+      title: "MySQL Layoffs Analysis",
+      subtitle: "Data Cleaning & Exploratory Data Analysis · MySQL",
+      badge: "MySQL · EDA",
+      badgeColor: "var(--teal-light)",
+      badgeText: "var(--teal)",
+      desc: "An end-to-end data pipeline project applied to a real-world dataset of tech layoffs. The work covers two phases: data cleaning (removing duplicates, standardizing categorical fields like industry and country, handling nulls, and converting text-based date fields into proper formats) and exploratory data analysis (surfacing trends by company, industry, stage, and geography over time).\n\nBuilt entirely in MySQL, with an emphasis on writing clean, well-structured SQL that could be extended into a reporting pipeline.",
+      embed: null,
+      tags: ["MySQL", "SQL", "Data Cleaning", "EDA", "Aggregation", "Window Functions"],
+      links: [
+        { label: "GitHub", href: "https://github.com/IreneGallini/mysql-layoffs-analysis" },
+      ],
+      collab: ""
+    },
+    imdb: {
+      title: "IMDB Database Redesign",
+      subtitle: "Relational database design & population · COMP302",
+      badge: "DB Design · COMP302",
+      badgeColor: "var(--amber-light)",
+      badgeText: "var(--amber)",
+      desc: "A ground-up redesign of the IMDB relational database schema. The project involved modeling entities and relationships for films, people, roles, genres, and ratings; designing and enforcing constraints and triggers; and populating the database with real IMDB data via a scripted ingestion process.\n\nFocus areas included normalization, ER diagram design, and writing non-trivial queries that exercise joins, subqueries, and aggregations across the schema.",
+      embed: null,
+      tags: ["SQL", "PostgreSQL", "Database Design", "ER Modeling", "Normalization", "Triggers"],
+      links: [
+        { label: "GitHub", href: "https://github.com/IreneGallini/comp302_group_project" },
+      ],
+      collab: "Built with Nayla and Sam."
+    },
     quantum: {
       title: "Quantum Cryptography",
       subtitle: "Research poster · BeyondQuantum 2025",
@@ -801,10 +879,7 @@
       badgeColor: "var(--purple-light)",
       badgeText: "var(--purple)",
       desc: "Research on quantum key distribution (QKD) — how quantum mechanical properties can be used to establish provably secure communication channels resistant to both classical and quantum eavesdroppers.\n\nThe work was conducted through the BeyondQuantum 2025 research program and culminated in a research poster presented to a technical audience.",
-      // Replace with a public URL to your PDF if you host it. Example:
-      // embed: "https://drive.google.com/file/d/YOUR_FILE_ID/preview",
       embed: null,
-      embedNote: "📄 Upload your PDF to Google Drive (Share → Anyone with link) and paste the embed link here to show the poster inline.",
       tags: ["Quantum Computing", "QKD", "Cryptography", "Qiskit", "Research Poster"],
       links: [
         { label: "GitHub", href: "https://github.com/ThinkingBeyond/BeyondQuantum-2025/tree/main/Taskia%20Islam%20and%20Irene%20Gallini" },
@@ -819,7 +894,6 @@
       badgeText: "var(--amber)",
       desc: "A comparative study of Transformer architectures vs LSTM models with attention mechanisms on sequence modeling tasks. The research analyzed performance, training efficiency, and generalization across different sequence lengths and dataset sizes.\n\nResults and methodology are available in the GitHub repository. Findings were also presented as a research poster.",
       embed: null,
-      embedNote: "📄 Upload your PDF to Google Drive (Share → Anyone with link) and paste the embed link here to show the poster inline.",
       tags: ["Python", "PyTorch", "Transformers", "LSTM", "Attention", "ML Research"],
       links: [
         { label: "GitHub", href: "https://github.com/hibablj/LSTMvsTRANSFORMERS/tree/main/results" },
@@ -831,7 +905,6 @@
   function openModal(key) {
     const p = projects[key];
 
-    // Badge
     const badge = document.getElementById('modal-badge');
     badge.textContent = p.badge;
     badge.style.background = p.badgeColor;
@@ -841,11 +914,9 @@
     document.getElementById('modal-title-el').textContent = p.title;
     document.getElementById('modal-subtitle-el').textContent = p.subtitle;
 
-    // Description (preserve newlines)
     const descEl = document.getElementById('modal-desc-el');
     descEl.innerHTML = p.desc.replace(/\n\n/g, '<br><br>');
 
-    // Embed
     const embedWrap = document.getElementById('modal-embed-wrap');
     const iframe = document.getElementById('modal-iframe');
     if (p.embed) {
@@ -856,17 +927,14 @@
       embedWrap.style.display = 'none';
     }
 
-    // Tags
     const tagsEl = document.getElementById('modal-tags-el');
     tagsEl.innerHTML = p.tags.map(t => `<span class="modal-tag">${t}</span>`).join('');
 
-    // Links
     const linksEl = document.getElementById('modal-links-el');
     linksEl.innerHTML = p.links.map(l =>
       `<a class="modal-link${l.primary ? ' primary' : ''}" href="${l.href}" target="_blank" rel="noopener">${l.label} ↗</a>`
     ).join('');
 
-    // Collab note
     const collabEl = document.getElementById('modal-collab-el');
     collabEl.textContent = p.collab || '';
     collabEl.style.display = p.collab ? 'block' : 'none';
