@@ -7,8 +7,39 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="terminal.css" />
 </head>
 <body>
+
+<button id="mode-toggle" onclick="TERM.toggleMode()">[ web view ]</button>
+
+<!-- ══ Terminal View ══ -->
+<div id="terminal-view">
+  <div class="term-titlebar">
+    <div class="term-dots">
+      <span class="term-dot dot-red"></span>
+      <span class="term-dot dot-yellow"></span>
+      <span class="term-dot dot-green"></span>
+    </div>
+    <span class="term-title">irene@portfolio — bash</span>
+  </div>
+  <div class="term-main">
+    <div class="term-content">
+      <div id="term-output"></div>
+      <div class="term-input-row" id="term-input-row">
+        <span class="term-prompt-label">irene@portfolio:~$&nbsp;</span>
+        <input type="text" id="term-input"
+          autocomplete="off" spellcheck="false"
+          autocorrect="off" autocapitalize="off"
+          aria-label="terminal input" />
+      </div>
+    </div>
+    <aside class="term-sidebar" id="term-sidebar"></aside>
+  </div>
+</div>
+
+<!-- ══ Web View ══ -->
+<div id="web-view">
 
 <!-- ══ Navigation ══ -->
 <nav>
@@ -346,7 +377,10 @@
   </div>
 </div>
 
+</div><!-- #web-view -->
+
 <script src="script.js"></script>
+<script src="terminal.js"></script>
 
 </body>
 </html>
