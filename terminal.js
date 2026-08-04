@@ -69,8 +69,6 @@ var TERM = (function () {
       .then(function () { return delay(80); })
       .then(function () { return typeIn('CS & Chemistry Student', 't-role', 28); })
       .then(function () { return delay(80); })
-      .then(function () { return typeIn('Exploring how software connects research, data, and ideas.', 't-bio', 14); })
-      .then(function () { return delay(300); })
       .then(function () {
         blank();
         appendLine('─'.repeat(50), 't-dim');
