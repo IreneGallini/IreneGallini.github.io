@@ -4,29 +4,29 @@ html { scroll-behavior: smooth; }
 body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  background: #faf9f7;
-  color: #1a1a18;
+  background: #fafafc;
+  color: #16161d;
   line-height: 1.6;
 }
 
 /* ── CSS Variables ── */
 :root {
-  --cream: #faf9f7;
-  --paper: #f3f1ec;
-  --border: #e2ddd6;
-  --border-strong: #c8c2b8;
-  --text-primary: #1a1a18;
-  --text-secondary: #5a5850;
-  --text-tertiary: #9a9488;
-  --accent: #2a4a8f;
-  --accent-light: #eef1f9;
-  --accent-mid: #b8c4e0;
-  --teal: #1a6b55;
-  --teal-light: #eaf4f0;
-  --amber: #7a4f15;
-  --amber-light: #fdf3e3;
-  --purple: #4a3588;
-  --purple-light: #f0edfb;
+  --cream: #fafafc;
+  --paper: #f2f2f7;
+  --border: #e4e4ec;
+  --border-strong: #c9c9d8;
+  --text-primary: #16161d;
+  --text-secondary: #55555f;
+  --text-tertiary: #8d8d99;
+  --accent: #5b3fd9;
+  --accent-light: #efecfd;
+  --accent-mid: #cbc0f5;
+  --teal: #0f766e;
+  --teal-light: #e6f5f3;
+  --amber: #34558b;
+  --amber-light: #e8edf7;
+  --purple: #3730a3;
+  --purple-light: #eceafb;
   --serif: 'DM Serif Display', serif;
   --sans: 'DM Sans', sans-serif;
   --radius: 10px;

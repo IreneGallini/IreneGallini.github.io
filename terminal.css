@@ -19,11 +19,11 @@
 #mode-toggle:hover { background: #21262d; }
 
 #mode-toggle.web-mode {
-  background: rgba(250, 249, 247, 0.96);
-  border-color: #c8c2b8;
-  color: #2a4a8f;
+  background: rgba(250, 250, 252, 0.96);
+  border-color: #c9c9d8;
+  color: #5b3fd9;
 }
-#mode-toggle.web-mode:hover { background: #f3f1ec; }
+#mode-toggle.web-mode:hover { background: #f2f2f7; }
 
 /* Give the nav breathing room for the toggle button in web mode */
 #web-view nav { padding-right: 130px; }
