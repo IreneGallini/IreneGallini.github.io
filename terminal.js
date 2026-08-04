@@ -145,9 +145,6 @@ var TERM = (function () {
 
   function cmdAbout() {
     blank();
-    appendLine("<span class='t-head'>Irene Gallini</span>");
-    appendLine('CS &amp; Chemistry Student');
-    blank();
     appendLine('Exploring how software can connect different fields and');
     appendLine('turn technical ideas into useful tools. I build projects');
     appendLine('across research, data, and applications with a focus on');
