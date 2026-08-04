@@ -67,9 +67,9 @@ var TERM = (function () {
     delay(400)
       .then(function () { return typeIn('Irene Gallini', 't-name', 45); })
       .then(function () { return delay(80); })
-      .then(function () { return typeIn('Developer & Researcher', 't-role', 28); })
+      .then(function () { return typeIn('CS & Chemistry Student', 't-role', 28); })
       .then(function () { return delay(80); })
-      .then(function () { return typeIn('CS and chemistry student — software, AI, and science.', 't-bio', 14); })
+      .then(function () { return typeIn('Exploring how software connects research, data, and ideas.', 't-bio', 14); })
       .then(function () { return delay(300); })
       .then(function () {
         blank();
@@ -148,11 +148,12 @@ var TERM = (function () {
   function cmdAbout() {
     blank();
     appendLine("<span class='t-head'>Irene Gallini</span>");
-    appendLine('Developer &amp; Researcher');
+    appendLine('CS &amp; Chemistry Student');
     blank();
-    appendLine('CS and chemistry student with experience developing');
-    appendLine('production-oriented software, machine learning workflows,');
-    appendLine('and computational modeling tools for research and industry.');
+    appendLine('Exploring how software can connect different fields and');
+    appendLine('turn technical ideas into useful tools. I build projects');
+    appendLine('across research, data, and applications with a focus on');
+    appendLine('accessibility and real-world impact.');
     blank();
     appendLine("<span class='t-dim'>Macalester College · 2026</span>");
   }
